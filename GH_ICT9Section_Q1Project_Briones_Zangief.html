@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q1 Project</title>
+</head>
+<style>
+
+body{
+  margin: 0 auto;
+}
+.topbar{
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 10px;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+.topbar a {
+  float: right;
+  display: block;
+  color:  white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.header {
+  width: 100%;
+  padding: 25px;
+  margin: 0;
+  background: #B19CD8;
+  text-align: center;
+  box-sizing: border-box;
+}
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.about-me{
+  width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #B19CD8;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px;
+}
+.about-me h2{
+  text-align: center;
+}
+.my-works{
+  width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #B19CD8;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px;
+}
+.contact-me{
+  width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #B19CD8;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px;
+  text-align: center;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-group input, .form-group select, .form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.form-group label {
+  font-weight: bold;
+}
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+footer{
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 10px;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+p{
+  text-align: center;
+}
+button {
+  background: white;
+  color: black;
+  padding: 12px 30px;
+  border: 2px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+</style>
+<body>
+  <div class="topbar">
+    <a class="active" href="#home">My Works</a>
+    <a href="#contact">Contact Me</a>
+    <a href="#about">About Me</a>
+  </div>
+  <div class="header">
+    <img src="student.png" alt="student" class="image">
+    <h1>Hello I am Zangief Briones</h1>
+    <p>An OBMC Student</p>
+  </div>
+  <div class="about-me">
+    <h2>About Me</h2>
+    <p>I am Zangief Briones, a passionate student who loves to do a lot of stuff. Some of my skills and hobbies include:</p><br>
+    <p style="text-align: justify;">Skills</p>
+    <img src="Takamura.webp" style="float: right; width: 200px; height: auto; margin-left: 20px; margin-bottom: 10px;">
+    <ol>
+      <li>Guitar</li>
+      <li>Piano</li>
+      <li>Dancing</li>
+      <li>Web Design</li>
+      <li>Video Editing</li>
+      <li>Basketball</li>
+    </ol>
+    <p style="text-align: justify;">Hobbies</p>
+    <ol>
+      <li>Boxing</li>
+      <li>Muay Thai</li>
+      <li>Eating</li>
+      <li>Exercising</li>
+    </ol>
+  </div>
+  <div class="my-works">
+      <h2 style="text-align: center;">My Works</h2>
+      <img src="Robot.png" style="float: right; width: 350px; margin-left: 20px; margin-bottom: 10px;">
+      <ul>
+        <li>HTML & CSS Projects</li>
+        <li>Personal Blog</li>
+        <li>School Portfolio</li>
+      </ul>
+      <a href="file:///Users/zangiefarkinbriones/Downloads/ICT/GH_ICT9Section_Q1SkillsTest_Briones_Zangief.html" style="float: right; margin-left: 20px; margin-bottom: 10px;">Link to my Robotics Application Form</a>
+      <div style="clear: both;"></div>
+  </div>
+  <div class="contact-me">
+    <h2>Contact Me</h2>
+      <form class="form-group">
+        <div class="form-group">
+            <label>Your Name:</label>
+            <input type="text" placeholder="Jane Doe">
+        </div>
+        <div class="form-group">
+            <label>Your Email:</label>
+            <input type="email" placeholder="jane_doe@gmail.com">
+        </div>
+        <div class="form-group">
+            <label>How did you find me?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="source"> Instagram</label>
+                <label><input type="radio" name="source"> Discord</label>
+                <label><input type="radio" name="source"> Friends</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Services Interested In:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Web Design</label>
+                <label><input type="checkbox"> Graphic Design</label>
+                <label><input type="checkbox"> Robotics</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Rate my Portfolio</label>
+            <select>
+                <option>Select Rating</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Feedback</label>
+            <textarea placeholder="feedback here..."></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+  </div>
+</body>
+<footer>
+  <div class="footer">
+    <h2>@2025 Zangief Briones. All rights reserved.</h2>
+  </div>
+</footer>
+</html>
